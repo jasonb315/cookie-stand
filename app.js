@@ -1,24 +1,31 @@
 var openHours = ["6am", "7am", "8am", "9am", "10am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm"];
 
 //////.....
+var shopArray = [];
 
-function StoreSheet(p,p,p) {
-  this.location: "1st and Pike",
-  this.minCust: 23,
-  this.maxCust: 65,
-  this.avgSale: 6.3,
-  this.totalSales: 0,
-  this.salesPerHour = function(){
-      
-  }
+function StoreSheet(location, minCust, maxCust, avgSale); {
+  this.location = location,
+  this.minCust = minCust,
+  this.maxCust = manCust,
+  this.avgSale = avgSale,
+  this.totalSales = 0,
+  this.hourlySale = [];
+  shopArray.push(this);
+  // this.totalSales = 0
+};//close constructor
 
-  
-  this.introduction = function() {
-    return 'Hi, my name is what, my name is who, my name is WIKI WIKI slim ' + this.firstName + '.'
-  }
+StoreSheet.prototype.salesPerHour = function () {
+  for (var i = 0; i < openHours.length; i++) {
+
+    var randMinMax = ((Math.random() * (this.maxCust - this.minCust) + this.minCust));
+    var saleMinMax = randMinMax*this.avgSale;
+    this.totalSales += saleMinMax;
+    hourlySale.push(saleMinMax);
 };
 
-
+StoreSheet.prototype.render = function () {
+    
+}
 
 
 
