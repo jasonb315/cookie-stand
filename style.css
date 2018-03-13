@@ -1,0 +1,38 @@
+.body {
+  background-color: salmon;
+}
+
+.header1 {
+  font-size: 30px;
+  
+}
+
+.report {
+  float: left;
+  width: 20%;
+}
+
+/* FONT SECTION */
+
+.high {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(60, 50, 60)
+}
+
+.data {
+  font-family: Arial;
+  color: rgb(60, 60, 50)
+}
+
+.text {
+  font-family: Georgia;
+  color: rgb(50, 60, 60)
+}
+
+.boxes {
+  background-color: white;
+}
+
+.tables {
+  background-color: white;
+}
