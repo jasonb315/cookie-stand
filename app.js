@@ -1,5 +1,43 @@
 var openHours = ["6am", "7am", "8am", "9am", "10am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm"];
 
+//////.....
+
+function StoreSheet(p,p,p) {
+  this.location: "1st and Pike",
+  this.minCust: 23,
+  this.maxCust: 65,
+  this.avgSale: 6.3,
+  this.totalSales: 0,
+  this.salesPerHour = function(){
+      
+  }
+
+  
+  this.introduction = function() {
+    return 'Hi, my name is what, my name is who, my name is WIKI WIKI slim ' + this.firstName + '.'
+  }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////.....
+
 var pike = {
   location: "1st and Pike",
   minCust: 23,

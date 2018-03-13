@@ -1,6 +1,10 @@
 .body {
-  background-color: salmon;
+  background-image: url("fishcookies.jpg");
+  background-size: 100%;
+  /* background-color: salmon; */
 }
+
+/* TEXT TYPES */
 
 .header1 {
   font-size: 30px;
@@ -29,10 +33,18 @@
   color: rgb(50, 60, 60)
 }
 
+/* BOXES AND TABLES */
+
 .boxes {
   background-color: white;
 }
 
 .tables {
   background-color: white;
+}
+
+#centerpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
