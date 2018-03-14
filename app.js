@@ -27,7 +27,7 @@ StoreSheet.prototype.render = function () {
   var xtdElement = document.createElement('td');
 
   xtdElement.textContent = this.location; ////////////////////////////////////
-  xtrElement.appendChild(xtdElement)
+  xtrElement.appendChild(xtdElement);
 
   for(var i = 0; i < openHours.length; i++) {
     xtdElement = document.createElement('td');
@@ -35,7 +35,6 @@ StoreSheet.prototype.render = function () {
     xtrElement.appendChild(xtdElement);
 
   };
-
   xtdElement = document.createElement('td');
   xtdElement.textContent = this.totalSales;
   xtrElement.appendChild(xtdElement);
@@ -53,26 +52,59 @@ function header (){
 
   var xtrElement = document.createElement('tr');
   var xtdElement = document.createElement('td');
-
-  xtdElement.textContent = 'Store Location'; ////////////////////////////////////
+  xtdElement.textContent = 'Store Location';
   xtrElement.appendChild(xtdElement);
 
   for ( i = 0 ; i < openHours.length ; i++ ) {
-    
     xtdElement = document.createElement('td');
     xtdElement.textContent = openHours[i];
     xtrElement.appendChild(xtdElement);
 
   }//for close
+
   xtdElement = document.createElement('td');
-  xtdElement.textContent = this.totalSales;
+  xtdElement.textContent = 'Local Total';
   xtrElement.appendChild(xtdElement);
   storeTable.appendChild(xtrElement);
+
 }//function close
 
 function footer(){
 
-}
+  var xtrElement = document.createElement('tr');
+  var xtdElement = document.createElement('td');
+
+  xtdElement.textContent = 'Sum Totals';
+  xtrElement.appendChild(xtdElement);
+
+  var totalTotal = 0;
+
+  for ( j = 0 ; j < openHours.length ; j++ ) {
+
+    var hourTotal = 0;
+
+    for( i = 0 ; i < shopArray.length ; i++ ) {
+
+        hourTotal += shopArray[i].hourlySale[j]
+
+    }//end inner for
+
+
+      totalTotal += hourTotal;
+      xtdElement = document.createElement('td');
+      xtdElement.textContent = hourTotal;
+      xtrElement.appendChild(xtdElement);
+
+  }//end outer for
+  
+    xtdElement = document.createElement('td');
+    xtdElement.textContent = totalTotal;
+    xtrElement.appendChild(xtdElement);
+
+  storeTable.appendChild(xtrElement);
+}//end footer function
+
+
 
 header ();
 
@@ -91,4 +123,4 @@ hill.render();
 alki.salesPerHour();
 alki.render();
 
-// footer ();
+footer ();
