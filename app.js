@@ -21,11 +21,12 @@ StoreSheet.prototype.salesPerHour = function () {
     this.hourlySale.push(saleMinMax);
   };//close proto
 };
+
 StoreSheet.prototype.render = function () {
   var xtrElement = document.createElement('tr');
   var xtdElement = document.createElement('td');
 
-  xtdElement.textContent = this.location;
+  xtdElement.textContent = this.location; ////////////////////////////////////
   xtrElement.appendChild(xtdElement)
 
   for(var i = 0; i < openHours.length; i++) {
@@ -42,169 +43,52 @@ StoreSheet.prototype.render = function () {
 };//close proto
 
 var pike = new StoreSheet("1st and Pike", 23, 65, 6.3);
+var airport = new StoreSheet("SeaTac Airport", 3, 24, 1.2);
+var center = new StoreSheet("Seattle Center", 11, 38, 3.7);
+var hill = new StoreSheet("Capitol Hill", 20, 38, 2.3);
+var alki = new StoreSheet("Alki", 2, 16, 4.6);
+
+
+function header (){
+
+  var xtrElement = document.createElement('tr');
+  var xtdElement = document.createElement('td');
+
+  xtdElement.textContent = 'Store Location'; ////////////////////////////////////
+  xtrElement.appendChild(xtdElement);
+
+  for ( i = 0 ; i < openHours.length ; i++ ) {
+    
+    xtdElement = document.createElement('td');
+    xtdElement.textContent = openHours[i];
+    xtrElement.appendChild(xtdElement);
+
+  }//for close
+  xtdElement = document.createElement('td');
+  xtdElement.textContent = this.totalSales;
+  xtrElement.appendChild(xtdElement);
+  storeTable.appendChild(xtrElement);
+}//function close
+
+function footer(){
+
+}
+
+header ();
+
 pike.salesPerHour();
 pike.render();
 
+airport.salesPerHour();
+airport.render();
 
+center.salesPerHour();
+center.render();
 
+hill.salesPerHour();
+hill.render();
 
+alki.salesPerHour();
+alki.render();
 
-
-
-
-
-
-
-
-//////.....
-
-// var pike = {
-//   location: "1st and Pike",
-//   minCust: 23,
-//   maxCust: 65,
-//   avgSale: 6.3,
-//   totalSales: 0,
-
-//   salesPerHour: function() {
-//     var pike = document.getElementById('pike');
-//     var pikeTotal = document.getElementById('pikeTotal');
-    
-//     for (var i = 0; i < openHours.length; i++) {
-
-//       var randMinMax = ((Math.random() * (this.maxCust - this.minCust) + this.minCust));
-//       var saleMinMax = randMinMax*this.avgSale;
-//       this.totalSales += saleMinMax
-//       var cph = document.createElement('li');
-//       cph.textContent = openHours[i] + ': ' + Math.round(saleMinMax) + '.';
-//       pike.appendChild(cph);
-
-//     } //close loop
-
-//     var pt = document.createElement('li');
-//     pt.textContent = "Total Sales: " + Math.round(this.totalSales) + '.'
-//     pikeTotal.appendChild(pt);
-//   } //close function
-// };//close object
-
-// pike.salesPerHour();
-
-
-
-// var airport = {
-//   location: "SeaTac Airport",
-//   minCust: 3,
-//   maxCust: 24,
-//   avgSale: 1.2,
-//   totalSales: 0,
-
-//   salesPerHour: function() {
-//     var airport = document.getElementById('airport');
-//     var airportTotal = document.getElementById('airportTotal');
-    
-//     for (var i = 0; i < openHours.length; i++) {
-
-//       var randMinMax = ((Math.random() * (this.maxCust - this.minCust) + this.minCust));
-//       var saleMinMax = randMinMax*this.avgSale;
-//       this.totalSales += saleMinMax
-//       var cph = document.createElement('li');
-//       cph.textContent = openHours[i] + ': ' + Math.round(saleMinMax) + '.'
-//       airport.appendChild(cph);
-
-//     } //close loop
-//     var at = document.createElement('li');
-//     at.textContent = "Total Sales: " + Math.round(this.totalSales) + '.'
-//     airportTotal.appendChild(at);
-//   } //close function
-// };
-
-// airport.salesPerHour();
-
-// var center = {
-//   location: "Seattle Center",
-//   minCust: 11,
-//   maxCust: 38,
-//   avgSale: 3.7,
-//   totalSales: 0,
-
-//   salesPerHour: function() {
-//     var center = document.getElementById('center');
-//     var centerTotal = document.getElementById('centerTotal');
-    
-//     for (var i = 0; i < openHours.length; i++) {
-
-//       var randMinMax = ((Math.random() * (this.maxCust - this.minCust) + this.minCust));
-//       var saleMinMax = randMinMax*this.avgSale;
-//       this.totalSales += saleMinMax
-//       var cph = document.createElement('li');
-//       cph.textContent = openHours[i] + ': ' + Math.round(saleMinMax) + '.'
-//       center.appendChild(cph);
-
-//     } //close loop
-//     var ct = document.createElement('li');
-//     ct.textContent = "Total Sales: " + Math.round(this.totalSales) + '.'
-//     centerTotal.appendChild(ct);
-//   } //close function
-// };
-// ///////////////////////////////////////////////////////
-// center.salesPerHour();
-
-// var hill = {
-//   location: "Capitol Hill",
-//   minCust: 20,
-//   maxCust: 38,
-//   avgSale: 2.3,
-//   totalSales: 0,
-
-//   salesPerHour: function() {
-//     var hill = document.getElementById('hill');
-//     var hillTotal = document.getElementById('hillTotal');
-
-//     for (var i = 0; i < openHours.length; i++) {
-
-//       var randMinMax = ((Math.random() * (this.maxCust - this.minCust) + this.minCust));
-//       var saleMinMax = randMinMax*this.avgSale;
-//       this.totalSales += saleMinMax
-//       var cph = document.createElement('li');
-//       cph.textContent = openHours[i] + ': ' + Math.round(saleMinMax) + '.'
-//       hill.appendChild(cph);
-
-//     } //close loop
-//     var ht = document.createElement('li');
-//     ht.textContent = "Total Sales: " + Math.round(this.totalSales) + '.'
-//     hillTotal.appendChild(ht);
-//   } //close function
-// };
-
-// hill.salesPerHour();
-
-// var alki = {
-//   location: "Alki",
-//   minCust: 2,
-//   maxCust: 16,
-//   avgSale: 4.6,
-//   totalSales: 0,
-
-//   salesPerHour: function() {
-//     var alki = document.getElementById('alki');
-//     var alkiTotal = document.getElementById('alkiTotal');
-    
-//     for (var i = 0; i < openHours.length; i++) {
-
-//       var randMinMax = ((Math.random() * (this.maxCust - this.minCust) + this.minCust));
-//       var saleMinMax = randMinMax*this.avgSale;
-//       this.totalSales += saleMinMax
-//       var cph = document.createElement('li');
-//       cph.textContent = openHours[i] + ': ' + Math.round(saleMinMax) + '.'
-//       alki.appendChild(cph);
-
-//     } //close loop
-//     var at = document.createElement('li');
-//     at.textContent = "Total Sales: " + Math.round(this.totalSales) + '.'
-//     alkiTotal.appendChild(at);
-//   } //close function
-// };
-
-// alki.salesPerHour()
-
-
-
+// footer ();
