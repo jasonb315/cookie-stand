@@ -12,6 +12,31 @@
 
     <body>
 
+      <table id="storeTable"></table>
+
+      <form id="shopForm">
+              <!-- inputs: location, minCust, maxCust, avgSale -->
+          <fieldset>
+                  <!-- legend in css -->
+              <legend>ADD A NEW STORE</legend>
+                  <!-- label in css -->
+              <label for="label1">Location:</label>
+              <input type="text" step="any" name="label1">
+
+              <label for="label2">Minamum customers per day:</label>
+              <input type="number" step="any" name="label2">
+
+              <label for="label3">Maximum customers per day:</label>
+              <input type="number" step="any" name="label3">
+
+              <label for="label4">Average sale per customer:</label>
+              <input type="number" step="any" name="label4">
+
+              <button id="submit">Add shop</button>
+
+          </fieldset>
+
+      </form>
 
 
       <table id="stores"></table>
