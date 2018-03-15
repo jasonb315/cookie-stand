@@ -1,0 +1,14 @@
+td {
+  padding: 10px;
+  border: medium solid rgb(0, 0, 0);
+  font-family: 'Abel', sans-serif;
+}
+
+table {
+  margin: 0 auto;
+  margin: 50px;
+}
+
+#shopForm {
+  padding: 50px;
+}
