@@ -56,18 +56,18 @@ new StoreSheet("Alki", 2, 16, 4.6);
 function header (){
 
   var xtrElement = document.createElement('tr');
-  var xtdElement = document.createElement('td');
+  var xtdElement = document.createElement('th');
   xtdElement.textContent = 'Store Location';
   xtrElement.appendChild(xtdElement);
 
   for ( i = 0 ; i < openHours.length ; i++ ) {
-    xtdElement = document.createElement('td');
+    xtdElement = document.createElement('th');
     xtdElement.textContent = openHours[i];
     xtrElement.appendChild(xtdElement);
 
   }//for close
 
-  xtdElement = document.createElement('td');
+  xtdElement = document.createElement('th');
   xtdElement.textContent = 'Local Total';
   xtrElement.appendChild(xtdElement);
   storeTable.appendChild(xtrElement);

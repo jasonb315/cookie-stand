@@ -1,0 +1,48 @@
+#header {
+  background-image: url("bwbackground.jpg");
+  background-size: 100vw;
+  height: auto;
+}
+
+#headerdiv {
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#sectionOne {
+  height: 100vh;
+  background-color: #B2B2A2
+  
+}
+
+#sectionTwo {
+  height: 100vh;
+  background-color: #3F3931;
+}
+
+h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 50px;
+  color: #E7BAA0;
+  background-color: #3F3931;
+  padding: 15px;
+}
+
+h2 {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color: #E5DACE;
+  background-color: #6D7973;
+  padding: 15px;
+}
+
+p {
+  color: #E5DACE;
+}
+
+/* #E7BAA0
+#E5DACE
+#B2B2A2
+#6D7973
+#3F3931 */
