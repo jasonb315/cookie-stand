@@ -1,0 +1,133 @@
+body {
+  padding: 15px;
+  background-color: #3F3931;
+  }
+
+#header {
+  background-image: url("../pictures/bwbackground.jpg");
+  background-size: 100vw;
+  height: auto;
+  background-attachment: fixed;
+}
+
+#headerdiv {
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#sectionOne {
+  height: auto;
+  background-color: #B2B2A2;
+  position: relative;
+  
+}
+
+#sectionTwo {
+  height: 100vh;
+  background-color: #6D7973;
+}
+
+#tpicleft {
+  height: 30vh;
+}
+
+#tpicright {
+  height: 20vh;
+}
+
+#fishfam {
+  height: 30vh;
+  display:block;
+  margin:auto;
+}
+
+#fishcutter {
+  height: 30vh;
+  display:block;
+  margin:auto;
+}
+
+#shirt {
+  height: 30vh;
+  display:block;
+  margin:auto;
+}
+
+#fishes {
+  height: 30vh;
+  display:block;
+  margin:auto;
+}
+
+h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 100px;
+  color: #E7BAA0;
+  background-color: #6D7973;
+  padding: 15px;
+}
+
+h2 {
+  font-family: 'Abel', sans-serif;
+  font-size: 40px;
+  color: #E7BAA0;
+  background-color: #3F3931;
+  padding: 15px;
+  text-align: center;
+}
+
+h3 {
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 30px;
+  color: #B2B2A2;
+  background-color: #3F3931;
+  padding: 15px;
+  text-align: center;
+}
+
+p {
+  color: #3F3931;
+  margin: 30px;
+  font-family: Trebuchet MS, sans-serif;
+}
+
+.card {
+  background-color: #6D7973;
+  width: 45%;
+  margin: 15px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.copy {
+  color: #3F3931;
+}
+ a {
+  margin: 10px;
+  text-align: center;
+  color: #E7BAA0;
+ }
+
+figcaption {
+  padding: 10px;
+}
+
+.cardcontainer {
+  margin: 0 auto;
+  background-color: #3F3931;
+  overflow: auto;
+  /* position: relative; */
+  top: 0%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  /* width: 70%; */
+}
+/* #E7BAA0
+#E5DACE
+#B2B2A2
+#6D7973
+#3F3931 */

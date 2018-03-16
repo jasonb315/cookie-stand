@@ -1,0 +1,58 @@
+body {
+  background-color: #6D7973;
+  cursor: url(../pictures/frosted-cookie.jpg);
+}
+
+td {
+  font-size: 13px;
+  padding: .5rem 1rem;
+  border: medium solid #6D7973;
+  font-family: 'Abel', sans-serif;
+  color: #E5DACE;
+  background-color: #3F3931;
+}
+
+th {
+  font-size: .8rem;
+  font-weight: bold;
+  padding: 20px;
+  border: medium solid #6D7973;
+  font-family: 'Abel', sans-serif;
+  color: #E5DACE;
+  background-color: #3F3931;
+}
+
+h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 100px;
+  color: #E7BAA0;
+  background-color: #3F3931;
+  padding: 30px;
+  vertical-align: middle;
+}
+
+table {
+  margin: 0 auto;
+  margin: 30px;
+}
+
+#shopForm {
+  padding: 50px;
+  border: medium solid #3F3931;
+  font-family: 'Abel', sans-serif;
+  color: #E5DACE;
+  background-color: #3F3931;
+}
+
+#saleslink {
+  margin: 30px;
+  color: #E5DACE;
+  background-color: #3F3931;
+}
+/*
+#E7BAA0
+#E5DACE
+#B2B2A2
+#6D7973
+#3F3931
+*/
