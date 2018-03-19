@@ -140,7 +140,8 @@ function addNewShop(event) {
 }//close add new shop event
 
 shopForm.addEventListener('submit', addNewShop);
-
+debugger;
+Node;
 header();
 salesAllStores();
 renderAllShops();
