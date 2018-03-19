@@ -34,6 +34,21 @@ h1 {
 table {
   margin: 0 auto;
   margin: 30px;
+  box-shadow: 1px 1px 8px 0px #000;
+  
+}
+
+table tr td:hover {
+  background-color: #6D7973;
+  color: black;
+}
+
+table tr td {
+  box-shadow: 1px 1px 8px 0px #000;
+}
+
+table tr td:first-child {
+  color: #B2B2A2;
 }
 
 #shopForm {
